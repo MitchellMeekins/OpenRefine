@@ -205,7 +205,7 @@ describe(__filename, function () {
       .click();
     cy.get('#or-import-enterurl').should(
       'to.contain',
-      'Enter one or more web addresses (URLs) pointing to data to download:'
+      'Enter one or more web adddresses (URLs) pointing to data to download:'
     );
     cy.get('input[bind="urlInput"]').filter(':visible').type(csvURL);
 

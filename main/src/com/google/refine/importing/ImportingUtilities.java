@@ -482,6 +482,10 @@ public class ImportingUtilities {
             p = currentFileSystem.toLegalFileName(p, '-');
             normalizedLocalName += String.format("%c%s", File.separatorChar, p);
         }
+        if(normalizedLocalName.substring(normalizedLocalName.length() -1) == " ")
+        {
+            normalizedLocalName = normalizedLocalName.substring(0,normalizedLocalName.length() -1);
+        }
         return normalizedLocalName;
     }
 
